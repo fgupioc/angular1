@@ -1,0 +1,13 @@
+<form>
+  <div class="form-group">
+    <label for="name">Email address</label>
+    <input [(ngModel)]="name" name="name" type="text" class="form-control" id="name" aria-describedby="nameHelp" placeholder="Ingrese el nombre">
+    <small id="nameHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="lastName">Password</label>
+    <input [(ngModel)]="lastName" name="lastName" type="text" class="form-control" id="lastName" aria-describedby="lastnameHelp" placeholder="ingrese apellidos">
+    <small id="lastnameHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <button (click)="saveUser()" type="button" class="btn btn-primary">Guardar</button>
+</form>
